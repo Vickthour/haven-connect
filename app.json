@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "chabox",
-    "slug": "chabox",
-    "version": "1.0.0",
+    "name": "HavenConnect",
+    "slug": "HavenConnect",
+    "version": "1.0.3_Beta",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -25,7 +25,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.telvida.chatbox"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

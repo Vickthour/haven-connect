@@ -32,7 +32,7 @@ export default function ChatScreen({ navigation }: RootTabScreenProps<'Chats'>) 
           showsHorizontalScrollIndicator={false}
           nestedScrollEnabled
         >
-           {!titleShown &&  <Text style = {[styles.title]}>WA Business</Text>}
+           {!titleShown &&  <Text style = {[styles.title]}>HavenConnect Chats</Text>}
             <SearchBar search = {onSearch} style = {{backgroundColor: Colors[colorScheme].backgroundOpac}} />
             <ChatNavs />
             <ChatList />
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     
   },
   title: {
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: '600',
   },
 

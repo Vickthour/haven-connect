@@ -65,7 +65,7 @@ export default {
 		},
 	}, {
 		id: 'm7',
-		content: 'Big Data is really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this sh*t!🤣🤣',
+		content: 'Big Data is really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this hustle!🤣🤣',
 		createdAt: '2022-04-29T14:53:00.000Z',
 		user: {
 			id: 'u1',
@@ -74,7 +74,7 @@ export default {
 		},
 	},{
 		id: 'm8',
-		content: 'Big Data is really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this sh*t!🤣🤣',
+		content: 'Big Data is really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this hustle!🤣🤣',
 		createdAt: '2022-04-29T14:53:00.000Z',
 		user: {
 			id: 'u2',
@@ -83,7 +83,7 @@ export default {
 		},
 	},{
 		id: 'm9',
-		content: 'Bentil is a boi and really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this sh*t!🤣🤣',
+		content: 'Bentil is a boi and really interesting. Cannot wait to go through all the material. Buh wait.... Since when have you been in this hustle!🤣🤣',
 		createdAt: '2022-04-29T14:53:00.000Z',
 		user: {
 			id: 'u1',

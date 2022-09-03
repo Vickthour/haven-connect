@@ -5,8 +5,8 @@ export default [
         type: 'Missed',
         user:{
             id: 'u7',
-            name: '@qBentil',
-            imageUri: 'https://codersquiz.netlify.app/img/bentil.jpeg',
+            name: '@telvida',
+            imageUri: 'https://atunda.co/wp-content/uploads/2021/03/Sam-Oredoyin.jpg',
         },
         date: '2022-02-21T15:40:00.000Z'
     },
@@ -27,8 +27,8 @@ export default [
         type: 'Outgoing',
         user: {
             id: 'u7',
-            name: '@qBentil',
-            imageUri: 'https://codersquiz.netlify.app/img/bentil.jpeg',
+            name: '@telvida',
+            imageUri: 'https://atunda.co/wp-content/uploads/2021/03/Sam-Oredoyin.jpg',
         },
         date: '2022-02-19T15:40:00.000Z'
     },
@@ -49,7 +49,7 @@ export default [
         type: 'Incoming',
         user: {
             id: 'u10',
-            name: 'Angelina Jolie',
+            name: 'Michelle Oredoyin',
             imageUri: 'https://lkbkspro.s3.amazonaws.com/atelier-management/gs_58d933b8-98b4-468e-b229-43100a9620a7.jpg',
           },
         date: '2022-02-19T15:40:00.000Z'

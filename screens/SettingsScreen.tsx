@@ -28,14 +28,14 @@ export default function SettingsScreen() {
           {/* User Profile */}
           <Profile />
           <Seperator />
-          <Settingitem iconBgColor={'#5D8BF4'} iconName = {'add-business'} title = {'Business Tools'}/>
+          <Settingitem iconBgColor={'#5D8BF4'} iconName = {'add-business'} title = {'Worship Tools'}/>
           <Seperator />
           <Settingitem iconBgColor={'#FFB72B'} iconName = {'star'} title = {'Starred Messages'} />
-          <Settingitem iconBgColor={'#219F94'} iconName = {'laptop-mac'} title = {'Linked Devices'} />
+          <Settingitem iconBgColor={'#219F94'} iconName = {'laptop-mac'} title = {'Admin Settings'} />
           <Seperator />
           <Settingitem iconType='MCI' iconBgColor={'#2D31FA'} iconName = {'key-variant'} style = {{transform: [{ rotate: '45deg'}]}} title = {'Accounts'} />
           <Settingitem iconType='MCI' iconBgColor={'#8BDB81'} iconName = {'whatsapp'} title = {'Chats'} />
-          <Settingitem iconType='MCI' iconBgColor={'#D82148'} iconName = {'bell-outline'} title = {'Notifications'} />
+          <Settingitem iconType='MCI' iconBgColor={'#D82148'} iconName = {'bell-outline'} title = {'Conf Tools'} />
           <Settingitem 
             iconType='F' 
             iconBgColor={'#6ECB63'} 
@@ -54,7 +54,7 @@ export default function SettingsScreen() {
             iconType='AD' 
             iconBgColor={'#E60965'} 
             iconName = {'heart'} 
-            title = {'Tell a Friend'} 
+            title = {'Rhapsody of the Day'} 
           />
         </ScrollView>
     </View>

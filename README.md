@@ -1,5 +1,5 @@
 # chatbox (...ongoing)
-ChatBox is a WhatsApp Business Clone built with React Native &amp; Expo.
+HavenConnect is  built with React Native &amp; Expo.
 
 # UI (DARK MODE)
 <div style = "display:flex; flex-direction: row; flex-wrap: wrap;justify-content: space-around;">

@@ -5,6 +5,7 @@ import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../typ
 
 import CallsScreen from '../screens/CallsScreen';
 import CameraScreen from '../screens/CameraScreen';
+import VertoScreen from '../screens/VertoScreen';
 import ChatScreen from '../screens/ChatScreen';
 import Colors from '../constants/Colors';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -44,10 +45,10 @@ export default function BottomTabNavigator() {
         />
         <BottomTab.Screen
           name="Camera"
-          component={CameraScreen}
+          component={VertoScreen}
           options={{
-            title: 'Camera',
-            tabBarIcon: ({ color }) => <SimpleLineIcons size={25} style={{ marginBottom: -3 }} name="camera" color={color} />,
+            title: 'Join Conf',
+            tabBarIcon: ({ color }) => <SimpleLineIcons size={25} style={{ marginBottom: -3 }} name="event" color={color} />,
           }}
         />
         <BottomTab.Screen

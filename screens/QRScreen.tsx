@@ -21,7 +21,7 @@ export default function QRScreen({ navigation }: RootTabScreenProps<'QRScreen'>)
           />
           <View style = {tw`w-90 items-center py-5  h-90 rounded-xl mt-28 ${colorScheme == 'light'? 'bg-gray-200': 'bg-gray-800'}`}>
     	        <Text style={tw`font-bold text-xl my-2`}>{profile.name}</Text>
-              <Text style={tw` text-gray-500 text-sm`}>WhatsApp Business Account</Text>
+              <Text style={tw` text-gray-500 text-sm`}>The Haven Nation</Text>
               <View style ={tw`p-4 bg-white rounded-lg mt-5`}>
                 <Image 
                     source={{uri: "https://www.qbentil.com/assets/img/wb-scan.jpg"}}
@@ -32,7 +32,7 @@ export default function QRScreen({ navigation }: RootTabScreenProps<'QRScreen'>)
         </View>
         <View style={tw`py-5 px-3`}>
           <Text style={tw`text-gray-400 text-sm text-center`}>
-            You customer can scan this code to start a WhatsApp chat with you.
+            Brethren can scan this code to start a HavenConnect chat with you.
             <TouchableOpacity activeOpacity={.7}><Text style={[{color: Colors.light.tint}]}>  Learn more</Text></TouchableOpacity>
           </Text>
         </View>
