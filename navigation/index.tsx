@@ -6,6 +6,7 @@ import { Feather, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 
 import AddLabelsScreen from '../screens/AddLabelScreen';
+import LoginScreen from '../components/Auth/LoginScreen';
 import BottomTabNavigator from './MainTabNavigator';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import Colors from '../constants/Colors';
@@ -92,6 +93,7 @@ function RootNavigator() {
           ),
           })} 
       />
+        <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'LoginScreen!' }} />
         <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
         <Stack.Screen name="LabelsScreen" component={LabelsScreen} options={{ title: 'Labels!', headerShown: false, headerTitleStyle: {color: Colors[colorScheme].text} }} />
         <Stack.Screen name="AddLabel" component={AddLabelsScreen} options={{ title: 'Labels!', headerShown: false }} />

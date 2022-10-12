@@ -5,10 +5,8 @@ import {
   View,
 } from 'react-native';
 // import ReactDialpad from 'react-dialpad';
-// import ReactDialpad from '../dialpad';
-// import VertinhoClient from '../verto-sdk/verto/VertoClient';
-
-import { Call, ConferenceLiveArray, LoginScreen, VertoClient, VertoInstanceManager, VertoParams, VertoView, ViewType } from '../index.d';
+import ReactDialpad from '../dialpad';
+import { Call, ConferenceLiveArray, LoginScreen, VertoClient, VertoInstanceManager, VertoParams, VertoView, ViewType } from 'react-native-verto-typescript';
 
 const VertoScreen = () => {
 
@@ -174,48 +172,69 @@ const VertoScreen = () => {
     })
   }
 
+  // return (
+  //   <View
+  //     style={{
+  //       flex: 1, justifyContent: 'center'
+  //     }}>
+  //     {
+  //       !loggedIn && <LoginScreen authParams={vertoParams.webSocket} onLoginHandler={onLoginHandler} />
+  //     }
+  //     {
+  //       <View style={{maxHeight: 40, marginTop: 20, flex: 1, flexDirection: 'row'}}>
+  //         <Button title={vertoClient !== null ? 'Close Socket' : 'Connect'} onPress={onChangeSocketState} />
+  //         {
+  //           vertoClient && 
+  //           <Button title={'Switch Camera'} onPress={onCameraSwitchHandler} />
+  //         }
+  //       </View>
+  //     }
+  //     {
+  //       loggedIn && <VertoView 
+  //         callState={callState}
+  //         callParams={callParams} 
+  //         cameraFacing={cameraFacing}
+  //         isAudioOff={audioState}
+  //         isCameraOff={cameraState}
+  //         isCallScreenVisible={true}
+  //         isRemoteAudioOff={false}
+  //         isToolboxVisible={true}
+  //         onLogoutClicked={onLogoutClicked}
+  //         showLogs={true}
+  //         viewKey="view1"
+  //         viewType={ViewType.both} 
+  //       />
+  //     }
+  //     {
+  //       mediaActionsVisible &&
+  //       <View style={{maxHeight: 60, flex: 1, flexDirection: 'row'}}>
+  //         <Button title={'Audio'} onPress={() => setAudioState(!audioState)} />
+  //         <Button title={'Video'} onPress={() => setCameraState(!cameraState)} />
+  //       </View>
+  //     }
+  //   </View>
+
+
+
+
+
+
+
+
+  // );
+
+
   return (
-    <View
-      style={{
-        flex: 1, justifyContent: 'center'
-      }}>
-      {
-        !loggedIn && <LoginScreen authParams={vertoParams.webSocket} onLoginHandler={onLoginHandler} />
-      }
-      {
-        <View style={{maxHeight: 40, marginTop: 20, flex: 1, flexDirection: 'row'}}>
-          <Button title={vertoClient !== null ? 'Close Socket' : 'Connect'} onPress={onChangeSocketState} />
-          {
-            vertoClient && 
-            <Button title={'Switch Camera'} onPress={onCameraSwitchHandler} />
-          }
-        </View>
-      }
-      {
-        loggedIn && <VertoView 
-          callState={callState}
-          callParams={callParams} 
-          cameraFacing={cameraFacing}
-          isAudioOff={audioState}
-          isCameraOff={cameraState}
-          isCallScreenVisible={true}
-          isRemoteAudioOff={false}
-          isToolboxVisible={true}
-          onLogoutClicked={onLogoutClicked}
-          showLogs={true}
-          viewKey="view1"
-          viewType={ViewType.both} 
-        />
-      }
-      {
-        mediaActionsVisible &&
-        <View style={{maxHeight: 60, flex: 1, flexDirection: 'row'}}>
-          <Button title={'Audio'} onPress={() => setAudioState(!audioState)} />
-          <Button title={'Video'} onPress={() => setCameraState(!cameraState)} />
-        </View>
-      }
-    </View>
-  );
+    <div className="app">
+      <div style={style}>Your number: {this.state.number}</div>
+      <ReactDialpad
+        style={style}
+        ref={dialpad => (this.dialpad = dialpad)}
+        onActionInvoked={this.onActionInvoked}
+        onStateChanged={this.onStateChanged}
+      />
+    </div>
+  ); 
 };
 
 export default VertoScreen;

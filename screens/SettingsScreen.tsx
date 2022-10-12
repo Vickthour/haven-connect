@@ -17,6 +17,7 @@ export default function SettingsScreen() {
   return (
     <View style={[styles.container]}>
       <SettingsScreenHeader showTitle = {titleShown} />
+
       <ScrollView  
           onScroll={handleScroll} 
           scrollEventThrottle = {1}
@@ -24,18 +25,26 @@ export default function SettingsScreen() {
           showsHorizontalScrollIndicator={false}
           nestedScrollEnabled
         >
+
            {!titleShown &&  <Text style = {[styles.title]}>Settings</Text>}
           {/* User Profile */}
           <Profile />
           <Seperator />
+
           <Settingitem iconBgColor={'#5D8BF4'} iconName = {'add-business'} title = {'Worship Tools'}/>
           <Seperator />
+
           <Settingitem iconBgColor={'#FFB72B'} iconName = {'star'} title = {'Starred Messages'} />
+
           <Settingitem iconBgColor={'#219F94'} iconName = {'laptop-mac'} title = {'Admin Settings'} />
           <Seperator />
+
           <Settingitem iconType='MCI' iconBgColor={'#2D31FA'} iconName = {'key-variant'} style = {{transform: [{ rotate: '45deg'}]}} title = {'Accounts'} />
+
           <Settingitem iconType='MCI' iconBgColor={'#8BDB81'} iconName = {'whatsapp'} title = {'Chats'} />
+
           <Settingitem iconType='MCI' iconBgColor={'#D82148'} iconName = {'bell-outline'} title = {'Conf Tools'} />
+
           <Settingitem 
             iconType='F' 
             iconBgColor={'#6ECB63'} 
@@ -44,18 +53,21 @@ export default function SettingsScreen() {
             style = {{transform: [{ rotate: '90deg'}]}}
           />
           <Seperator />
+
           <Settingitem 
             iconType='AD' 
             iconBgColor={'#5902EC'} 
             iconName = {'info'} 
             title = {'Help'} 
           />
+
           <Settingitem 
             iconType='AD' 
             iconBgColor={'#E60965'} 
             iconName = {'heart'} 
             title = {'Rhapsody of the Day'} 
           />
+          
         </ScrollView>
     </View>
   );

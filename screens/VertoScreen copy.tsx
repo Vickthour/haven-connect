@@ -5,10 +5,8 @@ import {
   View,
 } from 'react-native';
 // import ReactDialpad from 'react-dialpad';
-// import ReactDialpad from '../dialpad';
-// import VertinhoClient from '../verto-sdk/verto/VertoClient';
-
-import { Call, ConferenceLiveArray, LoginScreen, VertoClient, VertoInstanceManager, VertoParams, VertoView, ViewType } from '../index.d';
+import ReactDialpad from '../../dialpad';
+import { Call, ConferenceLiveArray, LoginScreen, VertoClient, VertoInstanceManager, VertoParams, VertoView, ViewType } from 'react-native-verto-typescript';
 
 const VertoScreen = () => {
 
@@ -43,7 +41,7 @@ const VertoScreen = () => {
     to: 'CH1SN0S1',
     from: '1000',
     callerName: 'MobileAppDemo',
-    useVideo: false
+    useVideo: true
   })
   const [callState, setCallState] = useState('');
   const [audioState, setAudioState] = useState(true);
@@ -184,7 +182,7 @@ const VertoScreen = () => {
       }
       {
         <View style={{maxHeight: 40, marginTop: 20, flex: 1, flexDirection: 'row'}}>
-          <Button title={vertoClient !== null ? 'Close Socket' : 'Connect'} onPress={onChangeSocketState} />
+          {/* <Button title={vertoClient !== null ? 'Close Socket' : 'Connect'} onPress={onChangeSocketState} /> */}
           {
             vertoClient && 
             <Button title={'Switch Camera'} onPress={onCameraSwitchHandler} />
