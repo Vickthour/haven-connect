@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # chatbox (...ongoing)
 HavenConnect is  built with React Native &amp; Expo.
 
@@ -58,3 +59,7 @@ Personal Comments to be updated soon....................
 1. Use and Manage of States
 2. Prop drilling (not recommended tho😊)
 3. Create of FlatList and Section List Componets to Re3nder Contacts
+=======
+# heaven-connect-conference
+Connect, collaborate, and get more done together with Heaven’s reliable video meeting solution. Having meaningful connections with meetings, team chat, phone, and more.
+>>>>>>> 815ca3dcaddfdd61a913bc0810569ad4708b2846
